@@ -2,18 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FocusTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTube - YouTube Shorts Blocker</title>
     <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>FocusTube</h1>
-        <div class="toggle-row">
-            <label for="blocking-toggle">Block Shorts</label>
-            <label class="switch">
-                <input type="checkbox" id="blocking-toggle" checked>
-                <span class="slider"></span>
-            </label>
+    <div class="app">
+        <div class="header">
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <h1>FocusTube</h1>
+            </div>
+            <div class="version">v1.0</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Shorts Blocker</h2>
+            </div>
+            
+            <div class="toggle-container">
+                <div class="toggle-info">
+                    <i class="fas fa-ban"></i>
+                    <span>Block Shorts</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="blocking-toggle" checked>
+                    <span class="slider">
+                        <span class="slider-knob"></span>
+                    </span>
+                </label>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="stat-value">24h+</span>
+                        <span class="stat-label">Time Saved</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-fire"></i>
+                    <div>
+                        <span class="stat-value">100+</span>
+                        <span class="stat-label">Shorts Blocked</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <i class="fas fa-cog"></i>
+                <h2>Settings</h2>
+            </div> 
+            <div class="toggle-container">
+                <div class="toggle-info">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="darkmode-toggle" checked>
+                    <span class="slider">
+                        <span class="slider-knob"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-links">
+                <a href="https://github.com/PrtHub" target="_blank" class="footer-link" title="View on GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/PritamGhosh010" target="_blank" id="feedback-btn" class="footer-link" title="Send Feedback">
+                    <i class="fas fa-comment-alt"></i>
+                </a>
+            </div>
+            <div class="creator">
+                Created with ❤️ by <a href="https://x.com/PritamGhosh010" target="_blank">Pritam Ghosh</a>
+            </div>
         </div>
     </div>
     <script src="popup.js"></script>

@@ -33,7 +33,6 @@
       }
     });
 
-    // Handle ytd-rich-shelf-renderer with #title-text containing "Shorts"
     document.querySelectorAll('ytd-rich-shelf-renderer').forEach(el => {
       const title = el.querySelector('#title-text');
       if (title && title.textContent.includes('Shorts')) {
@@ -42,7 +41,6 @@
       }
     });
 
-    // Handle ytd-pivot-bar-item-renderer with .tab-title containing "Shorts"
     document.querySelectorAll('ytd-pivot-bar-item-renderer').forEach(el => {
       const tab = el.querySelector('.tab-title');
       if (tab && tab.textContent.includes('Shorts')) {
