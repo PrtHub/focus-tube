@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><rect width="120" height="120" x="4" y="4" rx="20" ry="20" fill="#2196F3"/><text x="64" y="90" font-family="sans-serif" font-size="72" fill="white" text-anchor="middle" font-weight="bold">FT</text></svg>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="128" height="128" rx="16" fill="#dc2626"/>
+<path d="M51 40.5L85 64L51 87.5V40.5Z" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="40" y1="95" x2="95" y2="32" stroke="white" stroke-width="10" stroke-linecap="round"/>
+</svg>
