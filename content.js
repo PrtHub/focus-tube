@@ -68,11 +68,35 @@
     })
   }
 
+  function setYouTubeTheme(isDark) {
+    const html = document.documentElement;
+    const ytdApp = document.querySelector('ytd-app');
+    if (isDark) {
+      html.setAttribute('dark', '');
+      html.classList.add('dark');
+      html.classList.remove('light');
+      if (ytdApp) ytdApp.setAttribute('dark', '');
+    } else {
+      html.removeAttribute('dark');
+      html.classList.remove('dark');
+      html.classList.add('light');
+      if (ytdApp) ytdApp.removeAttribute('dark');
+    }
+  }
+
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.blockingEnabled !== undefined) {
       isBlockingEnabled = message.blockingEnabled;
       hideShorts();
     }
+    if (message.darkModeEnabled !== undefined) {
+      setYouTubeTheme(message.darkModeEnabled);
+    }
+  });
+
+  chrome.storage && chrome.storage.sync.get(['darkModeEnabled'], function(result) {
+    const isDark = result.darkModeEnabled !== false;
+    setYouTubeTheme(isDark);
   });
 
   const observer = new MutationObserver(hideShorts);

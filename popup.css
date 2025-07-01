@@ -1,6 +1,4 @@
-/* Enhanced Browser Extension Popup Styles */
 :root {
-    /* Modern color palette */
     --primary: #ff0000;
     --primary-hover: #e60000;
     --primary-light: rgba(255, 0, 0, 0.1);
@@ -18,7 +16,6 @@
     --warning: #ff9500;
     --info: #0ea5e9;
     
-    /* Design tokens */
     --border-radius: 8px;
     --border-radius-lg: 12px;
     --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,7 +54,6 @@ body {
     border-radius: 12px;
 }
 
-/* Enhanced Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -119,7 +115,6 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Enhanced Cards */
 .card {
     background: var(--bg-card);
     margin: 12px;
@@ -177,7 +172,6 @@ h2 {
     letter-spacing: -0.2px;
 }
 
-/* Enhanced Toggle Container */
 .toggle-container {
     display: flex;
     justify-content: space-between;
@@ -243,7 +237,6 @@ h2 {
     color: #ffffff;
 }
 
-/* Enhanced Switch */
 .switch {
     position: relative;
     display: inline-block;
@@ -294,7 +287,6 @@ input:checked + .slider:before {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Enhanced Stats */
 .stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -366,7 +358,6 @@ input:checked + .slider:before {
     font-weight: 500;
 }
 
-/* Enhanced Footer */
 .footer {
     margin-top: auto;
     padding: 12px 16px 16px;
@@ -424,7 +415,6 @@ input:checked + .slider:before {
     text-decoration: underline;
 }
 
-/* Animations */
 @keyframes slideIn {
     from { 
         opacity: 0; 
@@ -443,7 +433,6 @@ input:checked + .slider:before {
 .card:nth-child(2) { animation-delay: 0.1s; }
 .card:nth-child(3) { animation-delay: 0.2s; }
 
-/* Status Indicators */
 .status-active {
     position: relative;
 }
@@ -461,14 +450,12 @@ input:checked + .slider:before {
     box-shadow: 0 0 6px var(--success);
 }
 
-/* Improved accessibility */
 :focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
     border-radius: var(--border-radius);
 }
 
-/* Hover effects for better UX */
 .toggle-container:active {
     transform: scale(0.98);
 }
@@ -477,7 +464,6 @@ input:checked + .slider:before {
     transform: scale(0.95);
 }
 
-/* Micro-interactions */
 .card-header i {
     animation: pulse 2s infinite;
 }
@@ -491,7 +477,6 @@ input:checked + .slider:before {
     animation: none;
 }
 
-/* Responsive adjustments for very small screens */
 @media (max-width: 300px) {
     body {
         width: 280px;
